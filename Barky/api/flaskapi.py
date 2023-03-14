@@ -64,14 +64,3 @@ bp.add_url_rule('/all', 'all', fb.all, ['GET'])
 # @app.route('/api/all')
 bp.add_url_rule('/first/<filter>/<value>/<sort>',
                 'first', fb.first, methods=['GET'])
-
-# @app.route('/api/all')
-bp.add_url_rule('/many/<filter>/<value>/<sort>',
-                'many', fb.many, methods=['GET'])
-
-
-app = Flask(__name__)
-app.register_blueprint(bp)
-
-if __name__ == '__main__':
-    app.run()
