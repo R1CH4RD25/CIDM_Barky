@@ -8,7 +8,7 @@ import sqlite3
 
 import pytest
 
-from database import DatabaseManager
+from domain.database import DatabaseManager
 
 
 @pytest.fixture
